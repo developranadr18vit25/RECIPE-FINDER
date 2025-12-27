@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍲 Recipe Finder</h1>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for a recipe...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="recipesContainer" class="recipes"></div>
+  </div>
+
+  <!-- Recipe Details Popup -->
+  <div id="recipePopup" class="popup hidden">
+    <div class="popup-content">
+      <span id="closePopup" class="close-btn">&times;</span>
+      <h2 id="recipeTitle"></h2>
+      <img id="recipeImage" alt="Recipe image">
+      <h3>Ingredients:</h3>
+      <ul id="ingredientsList"></ul>
+      <h3>Instructions:</h3>
+      <p id="instructions"></p>
+    </div>
+  </div>
+
+  <script src="recipe.js"></script>
+</body>
+</html>
